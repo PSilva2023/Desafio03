@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    /* cores header e footer */
+    --bg-hef: #D7D4FF;
+    /* --------------------- */
+    --bg-botton: #6C63FF;
+    --bg-primary: #2B2B2B;
+    --bg-secondary: #555555;
+    /* fonts */
+    --Merriweather: Merriweather;
+    --Lato: Lato;
+}
 
 * {
     margin: 0px;
@@ -8,10 +22,215 @@
 header {
     padding: 50px 0px;
     min-height: 350px;
-    background-color: #D7D4FF;
+    background-color: var(--bg-hef);
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 1100px;
     margin: 0 auto;
 }
+
+.header-text h1 {
+    font-family: var(--Merriweather);
+    color: var(--bg-primary);
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 350px;
+}
+
+.header-text p {
+    font-family: var(--Lato);
+    color: var(--bg-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.botton {
+    width: 120px;
+    padding: 8px 6px;
+    background-color: var(--bg-botton);
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    font-family: var(--Lato);
+    margin-top: 40px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #EEE;
+}
+
+.content-main {
+    width: 100%;
+    background-color: #EEE;
+    display: flex;
+    gap: 20px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+.card {
+    width: 220px;
+    height: 300px;
+    background-color: #FFF;
+}
+
+.card .red {
+    width: 100%;
+    height: 50%;
+    background-color: #FF6363;
+}
+
+.card .heaven {
+    width: 100%;
+    height: 50%;
+    background-color: #63ECFF;
+}
+
+.card .pink {
+    width: 100%;
+    height: 50%;
+    background-color: #F363FF;
+}
+
+.card .green {
+    width: 100%;
+    height: 50%;
+    background-color: #63FF73;
+}
+
+.card .yellow {
+    width: 100%;
+    height: 50%;
+    background-color: #FFDD63;
+}
+
+
+.card .blue {
+    width: 100%;
+    height: 50%;
+    background-color: #6663FF;
+}
+
+.card .text h2 {
+    font-family: var(--Merriweather);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg-primary);
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.card .text p {
+    font-family: var(--Lato);
+    font-size: 14px;
+    color: var(--bg-secondary);
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.footer {
+    background-color: var(--bg-hef);
+    min-height: 350px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer h3 {
+    color: var(--bg-primary);
+    font-family: var(--Merriweather);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: rgba(110, 114, 117, 0.74);
+    font-size: 12px;
+}
+
+h3 {
+    margin-bottom: 25px;
+}
+
+textarea {
+    max-width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px 6px;
+    color: rgba(110, 114, 117, 0.74);
+    font-size: 12px;
+    border: none;
+}
+
+.enviar {
+    width: 300px;
+    padding: 8px 8px;
+    background-color: var(--bg-botton);
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--Lato);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+
+
+/* Responsive Start */
+
+@media(max-width: 450px) {
+
+    .content-main {
+        padding: 10px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+
+    input,
+    textarea,
+    .enviar{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .content-main {
+        padding: 20px;
+    }
+}
+
