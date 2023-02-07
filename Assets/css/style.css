@@ -235,9 +235,10 @@ textarea {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:360px) {
     .botton {
-        width: 60px;
-        padding: 4px 2px;
+        width: 90px;
+        padding: 5px 3px;
+        margin-bottom: 30px;
     }
 }
